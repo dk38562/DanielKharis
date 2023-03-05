@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel!</title>
+</head>
 <body>
-<form>
-  <label><h1 style="font-family: sans-serif;">What should I do with this website:</h1></label>
-  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwkjbawn" method="post">
+<h1 style="font-family: sans-serif;">What should I do with this website:</h1>
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
   <fieldset id="fs-frm-inputs">
     <label for="full-name">Full Name</label>
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
     <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="Enter Your Email" required="">
+    <input type="email" name="_replyto" id="email-address" placeholder="Enter your email" required="">
     <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Type your messege" required=""></textarea>
+    <textarea rows="5" name="message" id="message" placeholder="Enter your message" required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
   </fieldset>
   <input type="submit" value="Submit">
 </form><style>/* reset */
+*{
+  font-family: sans-serif;
+}
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
@@ -122,6 +129,5 @@
   margin-right: 3%;
 }
 </style>
-</form> 
 </body>
 </html>
